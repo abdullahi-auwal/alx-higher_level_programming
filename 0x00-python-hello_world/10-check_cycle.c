@@ -8,7 +8,7 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *ptr[50];
+	listint_t *ptr[500];
 	listint_t *next = list;
 	int j = 0;
 	int i = 0;
