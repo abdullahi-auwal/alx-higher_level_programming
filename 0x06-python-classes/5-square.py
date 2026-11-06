@@ -2,7 +2,8 @@
 """Square module.
 
 The square class provides functionality
-for managing the size of a square and calculating its area
+for managing the size of a square and
+calculating its area.
 """
 
 
