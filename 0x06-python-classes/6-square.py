@@ -18,6 +18,7 @@ class Square:
             position (tuple, optional): the position to start printing square
         """
         self.size = size
+        self.position = position
 
     def area(self):
         """Calculate the area of the square.
