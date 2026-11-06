@@ -18,8 +18,8 @@ class Square:
         Args:
             size (int, optional): the size of the square.
         """
-        if type(size) != int:
+        if type(size) is not int:
             raise TypeError("size must be an integer")
         if size < 0:
-            raise ValueError("size must br >= 0")
+            raise ValueError("size must be >= 0")
         self.__size = size
