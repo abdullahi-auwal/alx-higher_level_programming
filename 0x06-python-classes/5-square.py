@@ -30,7 +30,7 @@ class Square:
         """Print the square using using the #
         character.
         """
-        if self.__size < 0:
+        if self.__size == 0:
             print()
         else:
             for i in range(self.__size):
