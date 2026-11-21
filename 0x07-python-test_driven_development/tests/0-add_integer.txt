@@ -1,0 +1,30 @@
+Testing the add_integer module
+
+Tests:
+>>> add_integer = __import__("0-add_integer").add_integer
+>>> add_integer(2, 3)
+5
+
+>>> add_integer(-1, -4)
+-5
+
+>>> add_integer(6.0, 6.7)
+12
+
+>>> add_integer(5)
+103
+
+>>> add_integer("Hello")
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+>>> add_integer("Hello", "Halo")
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+>>> add_integer(2, "Hi")
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
