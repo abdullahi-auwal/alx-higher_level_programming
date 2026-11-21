@@ -19,7 +19,6 @@ The test:
 ##########
 ##########
 >>> print_square(0)
-<BLANKLINE>
 >>> print_square(1)
 #
 >>> print_square(1.5)
@@ -29,4 +28,4 @@ TypeError: size must be an integer
 >>> print_square(-1)
 Traceback (most recent call last):
   ...
-TypeError: size must be an integer
+ValueError: size must be >= 0

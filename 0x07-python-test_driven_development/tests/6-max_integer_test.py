@@ -1,5 +1,5 @@
 import unittest
-max_integer = __('6-max_integer').max_integer
+max_integer = __import__('6-max_integer').max_integer
 
 
 class TestMaxInteger(unittest.TestCase):
@@ -18,3 +18,16 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_all_zeros(self):
         self.assertEqual(max_integer([0, 0, 0]), 0)
+
+    def test_max_at_beginning(self):
+        self.assertEqual(max_integer([10, 5, 4]), 10)
+
+    def test_max_at_middle(self):
+        self.assertEqual(max_integer([5, 10, 4]), 10)
+
+    def test_floats(self):
+        self.assertEqual(max_integer([2.3, 5.4, 20.4]), 20.4)
+
+    def test_None(self):
+        with self.assertRaises(TypeError):
+            max_integer(None)
